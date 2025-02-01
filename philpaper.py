@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
 import json
+# this is a simple script to extract papers information from PhilPapers.org
+
 
 def find_all_innermost_groups(group):
     inner_groups = group.find_all(class_='group', recursive=False)
